@@ -1,0 +1,95 @@
+.sidebar{
+    flex: 1;
+    border-right:0.5px solid rgb(230, 227, 227);
+    min-height: 100vh;
+    background-color: white;
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center; //height center//
+        justify-content: center; //length center//
+
+        .logoim{
+            color: #431dca;
+            align-items: center;
+            padding: 0px;
+            margin-top: 1px;
+        }
+
+        .logo{
+            font-size: 22px;
+            font-weight: bolder;
+            color: #431dca;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+    }
+    hr{
+        height: 0;
+        border: 0.25px solid rgb(230, 227, 227);
+
+    }
+
+    .center{
+        padding-left: 10px;
+
+        ul{
+            list-style: none;
+            padding:0;
+            margin: 0;
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+                color: #999;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #ece8ff;
+                }
+
+                .icon{
+                    font-size: 18px;
+                    color: #431dca;
+                }
+
+                span{
+                    font-size: 13px;
+                    font-weight: bold;
+                    color:#888;
+                    margin-left: 10px;
+
+                }
+            }    
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption{
+            width: 20px;
+            height: 20px;
+            border-radius: 15px;
+            border: 1px solid #431dca;
+            cursor: pointer;
+            margin: 4px;
+
+            &:nth-child(1){
+                background-color:whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
+        }
+    }
+}
